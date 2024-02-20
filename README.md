@@ -25,3 +25,9 @@
 > nest g mo user == "to create nestjs Module"
 > nest g s user == "to create nestjs Service"
 > nest g co user == "to create nestjs Controller"
+
+# ---------------------------------------------------
+
+# To run backed
+
+> npm run start:dev
