@@ -10,3 +10,8 @@
 
 > npx prisma init
 > npx prisma migrate dev == "To migrate Created model to database"
+
+# Nest
+
+> nest new server
+> nest g mo user == "to create nestjs module"
