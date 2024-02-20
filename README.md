@@ -8,3 +8,4 @@
 # Prisma CLI
 
 > npx prisma init
+> npx prisma migrate dev == "To migrate Created model to database"
