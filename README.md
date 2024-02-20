@@ -15,6 +15,7 @@
 
 > npx prisma init
 > npx prisma migrate dev == "To migrate Created model to database"
+> npx prisma studio == "To go to prisma model"
 
 # ---------------------------------------------------
 
