@@ -3,6 +3,9 @@
 > npm i prisma --save-dev
 > npm i --save @nestjs/config == "to use nestjs packages like dotenv"
 > npm install @prisma/client
+> npm i @nestjs/mapped-types
+> npm i class-transformer
+> npm i class-validator
 
 # ---------------------------------------------------
 
