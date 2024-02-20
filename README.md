@@ -6,6 +6,8 @@
 > npm i @nestjs/mapped-types
 > npm i class-transformer
 > npm i class-validator
+> npm i bcrypt
+> npm i -D @types/bcrypt
 
 # ---------------------------------------------------
 
