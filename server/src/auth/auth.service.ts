@@ -39,13 +39,23 @@ export class AuthService {
   }
 
   async validateUser(dto: LoginDto) {
-    const user = await this.userService.findByEmail(dto.username);
+    const { username, password } = dto;
 
-    if (user && (await compare(dto.password, user.password))) {
+    if (!username || !password) {
+      throw new UnauthorizedException('Invalid credentials');
+    }
+
+    console.log('Username:', username);
+    console.log('Password:', password);
+
+    const user = await this.userService.findByEmail(username);
+
+    if (user && (await compare(password, user.password))) {
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const { password, ...result } = user;
       return result;
     }
-    throw new UnauthorizedException();
+
+    throw new UnauthorizedException('Invalid credentials');
   }
 }
