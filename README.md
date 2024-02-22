@@ -8,6 +8,7 @@
 > npm i class-validator
 > npm i bcrypt
 > npm i -D @types/bcrypt
+> npm i @nestjs/jwt
 
 # ---------------------------------------------------
 
