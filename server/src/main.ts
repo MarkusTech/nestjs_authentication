@@ -12,7 +12,8 @@ async function bootstrap() {
       transform: true,
     }),
   );
-  await app.listen(5000);
-  console.log(`Server is running on http://localhost:5000`);
+  const port = 5001;
+  await app.listen(port);
+  console.log(`Server is running on http://localhost:${port}`);
 }
 bootstrap();
